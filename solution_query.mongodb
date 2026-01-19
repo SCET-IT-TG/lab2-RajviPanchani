@@ -3,11 +3,11 @@
 
 db=db.insertone("companydb")
 db.employees.insertMany([
-  { name: "Rahul", department: "IT", salary: 60000, age: 28 },
-  { name: "Anita", department: "HR", salary: 35000, age: 32 },
-  { name: "Vikram", department: "Sales", salary: 45000, age: 26 },
-  { name: "Neha", department: "IT", salary: 80000, age: 34 },
-  { name: "Rohit", department: "Sales", salary: 25000, age: 23 }
+  { _id: 1, name: "Rahul", department: "IT", salary: 60000, age: 28 },
+  { _id: 2, name: "Anita", department: "HR", salary: 35000, age: 32 },
+  { _id: 3, name: "Vikram", department: "Sales", salary: 45000, age: 26 },
+  { _id: 4, name: "Neha", department: "IT", salary: 80000, age: 34 },
+  { _id: 5, name: "Rohit", department: "Sales", salary: 25000, age: 23 }
 ])
 
 
@@ -45,6 +45,7 @@ db.employees.find({ age: { $lte: 25 } })
 db.employees.find({
   salary: { $gte: 40000, $lte: 80000 }
 })
+
 
 
 

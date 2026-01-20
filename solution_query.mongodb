@@ -1,7 +1,7 @@
 //exercise:1
 
 
-db=db.insertone("companydb")
+db=db.insertOne("companydb")
 db.employees.insertMany([
   { _id: 1, name: "Rahul", department: "IT", salary: 60000, age: 28 },
   { _id: 2, name: "Anita", department: "HR", salary: 35000, age: 32 },
@@ -45,6 +45,7 @@ db.employees.find({ age: { $lte: 25 } })
 db.employees.find({
   salary: { $gte: 40000, $lte: 80000 }
 })
+
 
 
 
